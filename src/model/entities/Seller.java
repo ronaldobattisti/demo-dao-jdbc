@@ -11,7 +11,7 @@ public class Seller implements Serializable{
 	private Integer id;
 	private String name;
 	private String email;
-	private Date date;
+	private Date birthDate;
 	private Double baseSalary;
 	
 	private Department department;
@@ -23,7 +23,7 @@ public class Seller implements Serializable{
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.date = date;
+		this.birthDate = date;
 		this.baseSalary = baseSalary;
 		this.department = department;
 	}
@@ -52,12 +52,12 @@ public class Seller implements Serializable{
 		this.email = email;
 	}
 
-	public Date getDate() {
-		return date;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setBirthDate(Date date) {
+		this.birthDate = date;
 	}
 
 	public Double getBaseSalary() {
@@ -95,7 +95,7 @@ public class Seller implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", date=" + date + ", baseSalary="
+		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", date=" + birthDate + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
 	}
 	
