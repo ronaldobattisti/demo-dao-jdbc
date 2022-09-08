@@ -25,7 +25,7 @@ public class SellerDaoJDBC implements SellerDao{
 	}
 
 	@Override
-	public void inser(Seller obj) {
+	public void insert(Seller obj) {
 		PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
